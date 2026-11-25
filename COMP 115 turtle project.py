@@ -236,7 +236,7 @@ window(pillarB[0][9], pillarB[3][9], eastPoint, -1)
 window(pillarB[3][9], pillarB[1][9], eastPoint, -1)
 #drawing the signs
 buildB[3].append(baseB[5] + (0, 190)) #signB 0
-buildB[3].append(toPoint(1, SEPoint, signB[0], True, 0, baseB[0], baseB[1])) #1
+buildB[3].append(toPoint(abs(signB[0][0] - baseB[0][0]), SEPoint, signB[0], True)) #1
 buildB[3].append(toPoint(3, centerPoint, signB[1])) #2
 buildB[3].append(toPoint(-1, SEPoint, signB[2], False, 0, signB[0], centerPoint)) #3
 line(signB[3],signB[0])
